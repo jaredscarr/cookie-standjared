@@ -73,9 +73,9 @@ pikePlace.display();
 var seaTac = {
 
   hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
+  maxPersons: 44,
+  minPersons: 6,
+  avgCookiesPerCust: 1.2,
   avgDailyTotal: 0,
   avgCookiesPerHr: [],
   storeLoc: 'SeaTac Airport',
@@ -146,9 +146,9 @@ seaTac.display();
 var southCenter = {
 
   hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
+  maxPersons: 38,
+  minPersons: 11,
+  avgCookiesPerCust: 1.9,
   avgDailyTotal: 0,
   avgCookiesPerHr: [],
   storeLoc: 'South Center Mall',
@@ -218,9 +218,9 @@ southCenter.display();
 var bellSquare = {
 
   hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
+  maxPersons: 48,
+  minPersons: 20,
+  avgCookiesPerCust: 3.3,
   avgDailyTotal: 0,
   avgCookiesPerHr: [],
   storeLoc: 'Bellevue Square',
@@ -290,9 +290,9 @@ bellSquare.display();
 var alki = {
 
   hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
+  maxPersons: 24,
+  minPersons: 3,
+  avgCookiesPerCust: 2.6,
   avgDailyTotal: 0,
   avgCookiesPerHr: [],
   storeLoc: 'Alki',
