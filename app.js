@@ -8,6 +8,7 @@ var pikePlace = {
   avgCookiesPerCust: 5.2,
   avgDailyTotal: 0,
   avgCookiesPerHr: [],
+  storeLoc: 'Pike Place Market',
 
   customersPerHr:function(max, min) {
     return Math.random() * (max - min + 1) + min;
@@ -18,170 +19,53 @@ var pikePlace = {
   },
 
   pushToArray:function() {
-    for (i = 0; i < 8; i++) {
+    for (var i = 0; i < 8; i++) {
     this.avgCookiesPerHr.push(Math.floor(this.getHourlyTotal())); // pushes to array
     }
     return this.avgCookiesPerHr;
   },
 
   getDailyTotal:function() {
-    for (i =0; i < 8; i++) {
+    for (var i = 0; i < 8; i++) {
       this.avgDailyTotal += this.avgCookiesPerHr[i];
     }
     return this.avgDailyTotal; // daily total
+  },
+
+  display:function() {
+    var newListItem = 0;
+    var newText = '';
+    var times = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
+    var liItems = this.pushToArray();
+    console.log(liItems);
+
+    var store = document.createElement('h4');
+    store.innerHTML = this.storeLoc;
+    document.body.appendChild(store);
+
+    var newUlist = document.createElement('ul');
+    newUlist.setAttribute('class', 'listItem');
+    document.body.appendChild(newUlist);
+
+    for (var i = 0; i < this.hours; i++) {
+
+      newListItem = document.createElement('li');
+      newText = document.createTextNode(times[i] + ' ' + liItems[i]);
+      newListItem.appendChild(newText);
+      newUlist.appendChild(newListItem).setAttribute('id', times[i]);
+      newListItem.setAttribute('class', 'items');
+    }
+
+    var sold = this.getDailyTotal();
+    newListItem = document.createElement('li');
+    newText = document.createTextNode('Total ' + sold);
+    newListItem.appendChild(newText);
+    newUlist.appendChild(newListItem).setAttribute('id', 'pikeDaily');
+    newListItem.setAttribute('class', 'items');
+
   }
 
 }; //end pikePlace object
 
-console.log(pikePlace.pushToArray());
-console.log(pikePlace.getDailyTotal());
 
-//start seaTac object
-var seaTac = {
-  //variables
-  hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
-  avgDailyTotal: 0,
-  avgCookiesPerHr: [],
-
-  customersPerHr:function(max, min) {
-    return Math.random() * (max - min + 1) + min;
-  },
-
-  getHourlyTotal:function() {
-    return this.customersPerHr(this.maxPersons,this.minPersons) * this.avgCookiesPerCust;
-  },
-
-  pushToArray:function() {
-    for (i = 0; i < 8; i++) {
-    this.avgCookiesPerHr.push(Math.floor(this.getHourlyTotal())); // pushes to array
-    }
-    return this.avgCookiesPerHr;
-  },
-
-  getDailyTotal:function() {
-    for (i =0; i < 8; i++) {
-      this.avgDailyTotal += this.avgCookiesPerHr[i];
-    }
-    return this.avgDailyTotal; // daily total
-  }
-
-}; //end seaTac object
-
-console.log(seaTac.pushToArray());
-console.log(seaTac.getDailyTotal());
-
-//start southCenter object
-var southCenter = {
-  //variables
-  hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
-  avgDailyTotal: 0,
-  avgCookiesPerHr: [],
-
-  customersPerHr:function(max, min) {
-    return Math.random() * (max - min + 1) + min;
-  },
-
-  getHourlyTotal:function() {
-    return this.customersPerHr(this.maxPersons,this.minPersons) * this.avgCookiesPerCust;
-  },
-
-  pushToArray:function() {
-    for (i = 0; i < 8; i++) {
-    this.avgCookiesPerHr.push(Math.floor(this.getHourlyTotal())); // pushes to array
-    }
-    return this.avgCookiesPerHr;
-  },
-
-  getDailyTotal:function() {
-    for (i =0; i < 8; i++) {
-      this.avgDailyTotal += this.avgCookiesPerHr[i];
-    }
-    return this.avgDailyTotal; // daily total
-  }
-
-}; //end southCenter object
-
-console.log(southCenter.pushToArray());
-console.log(southCenter.getDailyTotal());
-
-//start bellSquare object
-var bellSquare = {
-  //variables
-  hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
-  avgDailyTotal: 0,
-  avgCookiesPerHr: [],
-
-  customersPerHr:function(max, min) {
-    return Math.random() * (max - min + 1) + min;
-  },
-
-  getHourlyTotal:function() {
-    return this.customersPerHr(this.maxPersons,this.minPersons) * this.avgCookiesPerCust;
-  },
-
-  pushToArray:function() {
-    for (i = 0; i < 8; i++) {
-    this.avgCookiesPerHr.push(Math.floor(this.getHourlyTotal())); // pushes to array
-    }
-    return this.avgCookiesPerHr;
-  },
-
-  getDailyTotal:function() {
-    for (i =0; i < 8; i++) {
-      this.avgDailyTotal += this.avgCookiesPerHr[i];
-    }
-    return this.avgDailyTotal; // daily total
-  }
-
-}; //end bellSquare object
-
-console.log(bellSquare.pushToArray());
-console.log(bellSquare.getDailyTotal());
-
-//start alki object
-var alki = {
-  //variables
-  hours: 8,
-  maxPersons: 88,
-  minPersons: 17,
-  avgCookiesPerCust: 5.2,
-  avgDailyTotal: 0,
-  avgCookiesPerHr: [],
-
-  customersPerHr:function(max, min) {
-    return Math.random() * (max - min + 1) + min;
-  },
-
-  getHourlyTotal:function() {
-    return this.customersPerHr(this.maxPersons,this.minPersons) * this.avgCookiesPerCust;
-  },
-
-  pushToArray:function() {
-    for (i = 0; i < 8; i++) {
-    this.avgCookiesPerHr.push(Math.floor(this.getHourlyTotal())); // pushes to array
-    }
-    return this.avgCookiesPerHr;
-  },
-
-  getDailyTotal:function() {
-    for (i =0; i < 8; i++) {
-      this.avgDailyTotal += this.avgCookiesPerHr[i];
-    }
-    return this.avgDailyTotal; // daily total
-  }
-
-}; //end alki object
-
-console.log(alki.pushToArray());
-console.log(alki.getDailyTotal());
-
-
+pikePlace.display();
