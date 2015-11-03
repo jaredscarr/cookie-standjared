@@ -17,13 +17,21 @@ var pikePlace = {
     return this.customersPerHr(this.maxPersons,this.minPersons) * this.avgCookiesPerCust;
   },
 
+  pushToArray:function() {
+    for (i = 0; i < 8; i++) {
+    this.avgCookiesPerHr.push(Math.floor(this.getHourlyTotal())); // pushes to array
+    }
+    return this.avgCookiesPerHr;
+  },
+
+  getDailyTotal:function() {
+    for (i =0; i < 8; i++) {
+      this.avgDailyTotal += this.avgCookiesPerHr[i];
+    }
+    return this.avgDailyTotal; // daily total
+  }
+
 }; //end pikePlace object
 
-//code
-for (i = 0; i < 8; i++) {
-  pikePlace.avgCookiesPerHr.push(Math.floor(pikePlace.getHourlyTotal()));
-  pikePlace.avgDailyTotal += pikePlace.avgCookiesPerHr[i];
-}
-
-console.log(pikePlace.avgCookiesPerHr);
-console.log(pikePlace.avgDailyTotal)
+console.log(pikePlace.pushToArray());
+console.log(pikePlace.getDailyTotal());
