@@ -277,7 +277,8 @@ var bellSquare = {
     newListItem = document.createElement('li');
     newText = document.createTextNode('Total ' + sold);
     newListItem.appendChild(newText);
-    newUlist.appendChild(newListItem).setAttribute('id', 'bellDaily');
+    newUlist.appendChild(newListItem);
+    newListItem.setAttribute('id', 'bellDaily');
     newListItem.setAttribute('class', 'items');
 
   }
@@ -322,7 +323,7 @@ var alki = {
   display:function() {
     var newListItem = 0;
     var newText = '';
-    var times = ['10amPike', '11amPike', '12pmPike', '1pmPike', '2pmPike', '3pmPike', '4pmPike', '5pmPike'];
+    var times = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
     var idNames = ['10amAlki', '11amAlki', '12pmAlki', '1pmAlki', '2pmAlki', '3pmAlki', '4pmAlki', '5pmAlki'];
     var liItems = this.pushToArray();
     console.log(liItems);
@@ -349,7 +350,8 @@ var alki = {
     newListItem = document.createElement('li');
     newText = document.createTextNode('Total ' + sold);
     newListItem.appendChild(newText);
-    newUlist.appendChild(newListItem).setAttribute('id', 'alkiDaily');
+    newUlist.appendChild(newListItem);
+    newListItem.setAttribute('id', 'alkiDaily');
     newListItem.setAttribute('class', 'items');
 
   }
