@@ -1,6 +1,6 @@
 var pikePlace = {
 
-  hours: 8,
+  hours: 8, // if you update hours you need to manually update the idNames variable and times variable
   maxPersons: 88,
   minPersons: 17,
   avgCookiesPerCust: 5.2,
