@@ -1,0 +1,63 @@
+body {
+  margin: 0px;
+}
+header {
+  background-color: #B3ABA9;
+  color: #FFFFFF;
+}
+
+#salmon{
+  margin-right: 300px;
+}
+
+nav {
+  background-color:#B3ABA9;
+  margin-bottom: -35px;
+}
+.navLinks {
+  display: inline-block;
+}
+
+.main {
+  background: url(cheesyfamily.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+
+#firstSlogan {
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+  text-shadow: 1px 2px 2px #B3ABA9;
+  margin: 80px, 0px, 0px, 40px;
+}
+
+article {
+  height: 500px;
+}
+
+.textAlignLeft {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.textAlignRight {
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 150px;
+}
+
+.imageAlignRight {
+  float: right;
+  margin-right: 150px;
+}
+
+.imageAlignleft {
+  float: left;
+  margin-left: 150px;
+}
+
+
+

@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CookieSalesSheet</title>
+  <title>Snookies</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="layout.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <form id ="tableForm">
-    <fieldset>
-      <legend>Store Submision Form</legend>
-      <label for="store">Store: </label>
-      <input id="store" name="store" type="text">
-      <label for="min">min Customer: </label>
-      <input id="min" name="min" type="text">
-      <label for="max">max Customer: </label>
-      <input id="max" name="max" type="text">
-      <label for="avg">average Customer: </label>
-      <input id="avg" name="avg" type="text">
-      <button id="subButton" type="submit">Submit</button>
-    </fieldset>
-  </form>
-  <button id="clearFields" type="submit">Clear</button>
-  <script type="text/javascript" src="app.js"></script>
+  <div id="page">
+    <header>
+      <nav>
+        <ul id="navList">
+          <li class="navLinks" id="salmon"><img src="salmonpic.png"></li>
+          <li class="navLinks"><a class="button button-primary" href="#">Home</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#">About</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#">Locations</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#">Merchandise</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#">Events</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      <div class ="main">
+        <h1 id="firstSlogan">Salmon cookies</br>made with fish,</br>salmon cookies</br>are delish!</h1>
+      </div>
+      <hr>
+      <article id="about">
+        <img class="imageAlignRight" src="cheesyfishies.jpg">
+        <h2 class ="textAlignLeft">Our Story</h2>
+        <h4 class="textAlignLeft">A high protein healthy snack</br> derived from locally sourced,</br>free range, shade grown,</br>free trade organic salmon.</h4>
+      </article>
+      <hr>
+      <article id="locations">
+        <h2 class="textAlignRight">Locations</h2>
+        <ul></ul> <!-- use JS to include array of store locations-->
+      </article>
+      <hr class="separate">
+      <article id="merchandise">
+        <img class="imageAlignRight" src="fishshirt.jpg">
+        <h2 class="textAlignLeft">Merchandise</h2>
+        <p class="textAlignLeft">A 100% cotton t-shirt.</br> Show your love of Snookies!</p>
+      </article>
+      <hr>
+      <article id="events">
+        <h2>Events</h2>
+        <ul>
+          <li><a href="#"></li><!-- insert event links -->
+        </ul>
+      </article>
+      <footer>
+        <ul>
+          <li class="navLinks"><a class="button" href="#">Home</a></li>
+          <li class="navLinks"><p>copyright©2015</p></li>
+        </ul>
+      </footer>
+    </div><!--"content"-->
+  </div> <!--"page" -->
 </body>
 </html>
