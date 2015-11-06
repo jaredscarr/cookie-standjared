@@ -12,46 +12,58 @@
     <header>
       <nav>
         <ul id="navList">
-          <li class="navLinks" id="salmon"><img src="salmonpic.png"></li>
-          <li class="navLinks"><a class="button button-primary" href="#">Home</a></li>
-          <li class="navLinks"><a class="button button-primary" href="#">About</a></li>
-          <li class="navLinks"><a class="button button-primary" href="#">Locations</a></li>
-          <li class="navLinks"><a class="button button-primary" href="#">Merchandise</a></li>
-          <li class="navLinks"><a class="button button-primary" href="#">Events</a></li>
+          <li class="navLinks"><img id="logo" src="salmonpic.png"></li>
+          <li class="navLinks"><a class="button button-primary" href="#page">Home</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#about">About</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#locations">Locations</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#merchandise">Merchandise</a></li>
+          <li class="navLinks"><a class="button button-primary" href="#events">Events</a></li>
         </ul>
       </nav>
     </header>
     <div id="content">
       <div class ="main">
-        <h1 id="firstSlogan">Salmon cookies</br>made with fish,</br>salmon cookies</br>are delish!</h1>
+        <h3 id="intro">Introducing <span>Snookies</span></br>for the whole family.</h3>
       </div>
-      <hr>
       <article id="about">
         <img class="imageAlignRight" src="cheesyfishies.jpg">
         <h2 class ="textAlignLeft">Our Story</h2>
         <h4 class="textAlignLeft">A high protein healthy snack</br> derived from locally sourced,</br>free range, shade grown,</br>free trade organic salmon.</h4>
       </article>
-      <hr>
       <article id="locations">
         <h2 class="textAlignRight">Locations</h2>
-        <ul></ul> <!-- use JS to include array of store locations-->
+        <div id="slogan">
+          <h4 class="textAlignRight" id="firstSlogan">Salmon cookies made with fish,</br>salmon cookies are delish!</h4>
+        </div>
+        <ul>
+          <li class="loclist">Pike Place Market</li>
+          <li class="loclist">SeaTac Airport</li>
+          <li class="loclist">Southcenter Mall</li>
+          <li class="loclist">Bellevue Square</li>
+          <li class="loclist">Alki</li>
+        </ul>
+        <p class="loclist">All locations open 10am - 6pm. Come get your Snookies!</p>
       </article>
-      <hr class="separate">
       <article id="merchandise">
         <img class="imageAlignRight" src="fishshirt.jpg">
         <h2 class="textAlignLeft">Merchandise</h2>
-        <p class="textAlignLeft">A 100% cotton t-shirt.</br> Show your love of Snookies!</p>
+        <p class="textAlignLeft">A 100% merino wool</br>For a life of adventure</br>Show your love of Snookies!</p>
+        <a class="button button-primary" id="purchase" href="#">Purchase</a>
       </article>
-      <hr>
       <article id="events">
-        <h2>Events</h2>
+        <h2 class="textAlignRight">Events</h2>
+        <img class="imageAlignRight" src="salmonpic.png">
         <ul>
-          <li><a href="#"></li><!-- insert event links -->
+          <li class="eventList"><a class="link" href="http://salmonfestseattle.com/">Salmon Fest</li>
+          <li class="eventList"><a class="link" href="http://www.salmondays.org/">Salmon Days</li>
+          <li class="eventList"><a class="link" href="http://salmonfestseattle.com/">Salmon Fest</li>
+          <li class="eventList"><a class="link" href="http://www.wildsalmoncenter.org/press/events_and_talks.php">Salmon Center Talks</li>
+
         </ul>
       </article>
       <footer>
         <ul>
-          <li class="navLinks"><a class="button" href="#">Home</a></li>
+          <li class="navLinks"><a class="button" href="#page">Home</a></li>
           <li class="navLinks"><p>copyright©2015</p></li>
         </ul>
       </footer>
