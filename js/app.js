@@ -125,7 +125,6 @@ avgInput = null;
 //event listener for form submition
 tableForm.addEventListener('submit', handleInput);
 
-
 //end subFunction
 
 pikePlace.display();
@@ -133,3 +132,4 @@ seaTac.display();
 southCenter.display();
 bellSquare.display();
 alki.display();
+//begin event handler for animation
