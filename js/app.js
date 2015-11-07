@@ -133,11 +133,3 @@ southCenter.display();
 bellSquare.display();
 alki.display();
 //begin event handler for animation
-var salmon = getElementById('logo');
-var animation = function (event) {
-  event.preventDefault();
-  salmon.setAttribute('class', 'animate');
-  salmon.removeAttribute('class', 'animate');
-  }
-salmon.addEventListener('click', animation);
-

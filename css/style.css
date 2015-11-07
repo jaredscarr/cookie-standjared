@@ -113,8 +113,10 @@ footer ul li {
      -moz-transform: scale(1);
        -o-transform: scale(1);
           transform: scale(1);
-animation: swim 3s infinite;
+  animation: swim 3s 1;
+  -webkit-animation-play-state: running;
 }
+
 
 /*Animation code from http://codepen.io/jonitrythall/pen/bivaG*/
 @keyframes swim {
