@@ -4,14 +4,34 @@ body {
 header {
   background-color: #B3ABA9;
   color: #FFFFFF;
+  height:150px;
 }
 
 nav {
   background-color:#B3ABA9;
   margin-bottom: -35px;
+  display: inline-block;
+}
+
+#navList {
+  display: inline-block;
+  margin-bottom: 0px;
 }
 .navLinks {
   display: inline-block;
+}
+
+a .button {
+  margin-bottom: 0px;
+}
+
+.button {
+  margin-top: 0px;
+}
+
+#name {
+  display:inline-block;
+  padding-right: 30px;
 }
 
 .main {
@@ -34,7 +54,7 @@ nav {
   background-color: #EEEEEE;
 }
 
-article {
+section {
   height: 350px;
 }
 
@@ -62,6 +82,10 @@ article {
 
 #slogan {
   float: right;
+}
+
+#titleSlogan {
+  display: inline;
 }
 
 .loclist {
@@ -106,6 +130,7 @@ footer ul li {
   width:150px;
   margin-left: 30px;
   margin-right: 30px;
+  margin-top: 20px;
 }
 
 .animate {
